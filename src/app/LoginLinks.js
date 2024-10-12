@@ -18,7 +18,7 @@ const LoginLinks = () => {
             ) : (
                 <>
                     <Link
-                        href="/dashboard/login"
+                        href={`${process.env.NEXT_PUBLIC_BACKEND_URL}/dashboard/login`}
                         className="text-sm text-gray-700 underline"
                     >
                         Login

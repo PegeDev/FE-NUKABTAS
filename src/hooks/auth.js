@@ -103,7 +103,7 @@ export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
             await axios.post('/logout').then(() => mutate())
         }
 
-        window.location.pathname = '/dashboard/login'
+        window.location.pathname = `${process.env.NEXT_PUBLIC_BACKEND_URL}/dashboard/login`
     }
 
     useEffect(() => {
