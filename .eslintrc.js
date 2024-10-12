@@ -33,6 +33,7 @@ module.exports = {
         'no-console': 'warn',
         'no-nested-ternary': 0,
         'no-underscore-dangle': 0,
+        'no-unused-vars': 0,
         'no-unused-expressions': ['error', { allowTernary: true }],
         camelcase: 0,
         'react/self-closing-comp': 1,
@@ -46,6 +47,6 @@ module.exports = {
         'react/require-default-props': 0,
         'react/react-in-jsx-scope': 0,
         'linebreak-style': ['error', 'windows'],
-        semi: ['error', 'never'],
+        semi:0
     },
 }

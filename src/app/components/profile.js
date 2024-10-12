@@ -45,7 +45,7 @@ export const Profile = () => {
                     </div>
                     <div className="relative z-10 flex h-[50px] w-[50px] items-center justify-end space-x-2.5 overflow-hidden rounded-full">
                         <Image
-                        loader={({ src, width, quality })=> {
+                        loader={({ src})=> {
                                 return `${process.env.NEXT_PUBLIC_BACKEND_URL}/${src}`
                         }}
                             src={`storage/${user.profile_picture}`}
