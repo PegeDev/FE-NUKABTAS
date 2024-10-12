@@ -8,7 +8,7 @@ export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
     const params = useParams()
     redirectIfAuthenticated =
         redirectIfAuthenticated ??
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/admin`
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/dashboard`
 
     const {
         data: user,
@@ -107,8 +107,8 @@ export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
     }
 
     useEffect(() => {
-        if (middleware === 'guest' && redirectIfAuthenticated && user)
-            router.push(redirectIfAuthenticated)
+        // if (middleware === 'guest' && redirectIfAuthenticated && user)
+        //     router.push(redirectIfAuthenticated)
         if (
             window.location.pathname === '/verify-email' &&
             user?.email_verified_at
