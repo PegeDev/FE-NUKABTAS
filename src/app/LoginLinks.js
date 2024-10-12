@@ -18,7 +18,7 @@ const LoginLinks = () => {
             ) : (
                 <>
                     <Link
-                        href="/login"
+                        href="/dashboard/login"
                         className="text-sm text-gray-700 underline"
                     >
                         Login

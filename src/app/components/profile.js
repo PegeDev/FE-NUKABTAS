@@ -105,7 +105,7 @@ export const Profile = () => {
                 className={
                     'h-10 items-center justify-center gap-2.5 rounded-md px-4 py-3 transition-all ease-in-out hover:opacity-75 lg:flex bg-white text-black'
                 }
-                href="/login">
+                href="/dashboard/login">
                 <Image src={'/iconShield.png'} width={20} height={20} />
                 Login
             </a>
